@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Configuración de Angular</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/start.css">
+    <link rel="icon" type="image/x-icon" href="../img/Angular_full_color_logo.svg.png">
+</head>
+<body>
+   <!-- Barra de navegación -->
+   <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: whitesmoke;">
+    <a class="navbar-brand" href="#"><img src="../img/Angular_full_color_logo.svg.png" alt="logo" width="50px"></a>
+    <button class="navbar-toggler bg-danger" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>            
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" >
+        <ul class="navbar-nav nav-underline ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html" style="color: rgb(228, 15, 15);">Inicio</a>
+            </li>                 
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: rgb(228, 15, 15);">Despliegue</a>
+            </li>         
+        </ul>
+    </div>
+</nav>
+
+ <!-- Sección Inicio -->
+ <header id="home" class="jumbotron jumbotron-fluid text-white text-center" style="background: rgb(179, 16, 16);">
+    <div class="container">
+        <h1 class="display-4">Guía de Configuración de Angular</h1>        
+    </div>
+</header>
+
+<!-- Sección  -->
+<section  class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center">Prerequisitos</h2>
+        <div class="row text-center mt-4">
+            <div class="col-md-4">                
+                    <h2 class="h4">Node.js</h2>
+                    <p>v^18.9.1 o más reciente </p>            
+            </div>
+            <div class="col-md-4">
+                <h2 class="h4">Editor de texto</h2>
+                <p>Recomendamos Visual Studio Code </p>                
+            </div>
+            <div class="col-md-4">
+                <h2 class="h4">Terminal</h2>
+                <p>Necesaria para ejecutar los comandos de Angular CLI</p>                
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container my-5">    
+   
+    <div class="step">
+        <h2 class="h4">Instrucciones</h2>
+        <p>La siguiente guía te guiará a través de la configuración de un proyecto Angular local.</p>                
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="h5">Instalar Angular CLI</h3>
+        <p>Abre una terminal (si usas Visual Studio Code, puedes abrir una terminal integrada) y ejecuta el siguiente comando:</p>
+        <div class="code-container">
+            <pre><code id="code1">npm install -g @angular/cli</code></pre>
+            <button class="btn btn-primary copy-button" data-clipboard-target="#code1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+              </svg></button>
+        </div>
+        <p>Si tienes problemas para ejecutar este comando en Windows o Unix, consulta la <a href="https://angular.io/cli" target="_blank">documentación de CLI</a> para más información.</p>
+        </div>
+        <div class="col-md-12">
+            <h3 class="h5">Crear un nuevo proyecto</h3>
+        <p>En tu terminal, ejecuta el comando CLI <code>ng new</code> con el nombre deseado para el proyecto. En los siguientes ejemplos, usaremos el nombre de proyecto <code>my-first-angular-app</code>.</p>
+        <div class="code-container">
+            <pre><code id="code2">ng new &lt;project-name&gt;</code></pre>
+            <button class="btn btn-primary copy-button" data-clipboard-target="#code2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+              </svg></button>              
+            
+        </div>
+        <p>Se te presentarán algunas opciones de configuración para tu proyecto. Usa las teclas de flecha y enter para navegar y seleccionar las opciones que desees.</p>
+        <p>Si no tienes preferencias, solo presiona la tecla enter para aceptar las opciones predeterminadas y continuar con la configuración.</p>
+        <p>Después de seleccionar las opciones de configuración y que el CLI complete la configuración, deberías ver el siguiente mensaje:</p>
+        <div class="code-container">
+            <pre><code id="code3">✔ Packages installed successfully.
+Successfully initialized git.</code></pre>            
+        </div>
+        </div>
+        <div class="col-md-12">
+            <h3 class="h5">Ejecutar tu nuevo proyecto localmente</h3>
+        <p>En tu terminal, cambia a tu nuevo proyecto Angular:</p>
+        <div class="code-container">
+            <pre><code id="code4">cd my-first-angular-app</code></pre>
+            <button class="btn btn-primary copy-button" data-clipboard-target="#code4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+              </svg></button>
+        </div>
+        <p>Todos tus dependencias deberían estar instaladas en este punto (puedes verificarlo comprobando la existencia de una carpeta <code>node_modules</code> en tu proyecto), por lo que puedes iniciar tu proyecto ejecutando el comando:</p>        
+        </div>
+        <div class="col-md-12">
+            <div class="code-container">
+                <pre><code id="code5">npm start</code></pre>
+                <button class="btn btn-primary copy-button" data-clipboard-target="#code5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+              </svg></button>
+            </div>
+            <p>Si todo es exitoso, deberías ver un mensaje de confirmación similar en tu terminal:</p>
+            <div class="code-container">
+                <pre><code id="code6">Watch mode enabled. Watching for file changes...
+                NOTE: Raw file sizes do not reflect development server per-request transformations.
+                ➜ Local: http://localhost:4200/
+                ➜ press h + enter to show help</code></pre>                
+            </div>
+            <p>Ahora puedes visitar la ruta en Local (por ejemplo, <a href="http://localhost:4200" target="_blank">http://localhost:4200</a>) para ver tu aplicación.</p>
+        </div>       
+    </div>    
+</div>
+ 
+  <!-- Footer -->
+  <footer class=" text-white text-center py-3" style="background:rgb(179, 16, 16);">
+    <p>&copy; 2024 Aprende Angular. Todos los derechos reservados Brandon Gomez.</p>
+</footer>
+
+        <script src="js/start.js"></script>
+</body>
+</html>

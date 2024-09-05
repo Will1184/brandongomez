@@ -1,0 +1,14 @@
+/* Estilos personalizados */
+
+#home {
+    color: #fff;
+}
+
+#about h2, #features h2, #contact h2 {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+#features .col-md-4 img {
+    max-width: 100px;
+}

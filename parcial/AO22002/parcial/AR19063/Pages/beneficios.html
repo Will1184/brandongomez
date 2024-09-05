@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laravel: El Framework PHP para Artesanos Web</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        :root {
+            --primary-color: #F05340;
+            --secondary-color: #FF2D20;
+            --text-color: #333;
+            --bg-color: #f4f4f4;
+            --nav-bg-color: #ffffff;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav {
+            background-color: var(--nav-bg-color);
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            height: 40px;
+            max-width: 150px;
+            margin-left: 20px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 1em;
+            font-weight: 500;
+            padding: 5px 10px;
+        }
+        
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+        
+        header {    
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, var(--secondary-color) 0%, var(--primary-color) 70%);
+            animation: rotate 20s linear infinite;
+            z-index: 0;
+        }
+        
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        h1, h2 {
+            color: var(--primary-color);
+            position: relative;
+            z-index: 1;
+        }
+        
+        header h1 {
+            color: white;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        .logo {
+            display: block;
+            margin: 20px auto;
+            max-width: 150px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        section:hover {
+            transform: translateY(-5px);
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-logo {
+                margin: 10px 0;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="../imagenes/laravel-logo.png" alt="Logo de Laravel" class="nav-logo">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="conoce.html">Conoce Laravel</a></li>
+            <li><a href="nuevoProyecto.html">Crear Proyecto</a></li>
+            <li><a href="despliegue.html">Despliegue</a></li>
+            <li><a href="beneficios.html">Beneficios</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Beneficios</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Sintaxis Elegante y Expresiva</h2>
+            <p>
+                Laravel es conocido por su sintaxis limpia y fácil de entender, lo que hace que el desarrollo sea más rápido, intuitivo y menos propenso a errores. Esta simplicidad mejora la productividad y facilita el mantenimiento del código a largo plazo.
+            </p>
+        </section>
+        
+        <section>
+            <h2>Patrón de Diseño MVC (Modelo-Vista-Controlador)</h2>
+            <p>
+                El uso del patrón MVC en Laravel separa la lógica de la aplicación, la presentación y la gestión de datos, lo que organiza mejor el código y permite un desarrollo más estructurado y colaborativo.
+            </p>
+        </section>
+
+        <section>
+            <h2>ORM Eloquent</h2>
+            <p>
+                Eloquent, el ORM de Laravel, simplifica la interacción con bases de datos al proporcionar una sintaxis intuitiva para manejar relaciones y consultas SQL complejas. Esto acelera el desarrollo y reduce la necesidad de escribir SQL manualmente.
+            </p>
+        </section>
+
+        <section>
+            <h2>Comunidad Activa y Documentación Extensa</h2>
+            <p>
+                Laravel tiene una de las comunidades más grandes y activas, lo que significa acceso a una gran cantidad de recursos, soporte, y paquetes de terceros. Además, su documentación es clara y completa, facilitando el aprendizaje y la resolución de problemas.
+            </p>
+        </section>
+    </main>
+</body>
+</html>

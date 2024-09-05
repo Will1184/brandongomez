@@ -1,0 +1,26 @@
+.code-container {
+    position: relative;
+}
+.copy-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+pre {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+.step {
+    margin-bottom: 30px;
+}
+.step h2 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+.step p {
+    margin-bottom: 10px;
+}

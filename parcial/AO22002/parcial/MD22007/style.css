@@ -1,0 +1,156 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+h1{
+    text-align: center;
+}
+
+@media (min-resolution: 2dppx) {
+    .react {
+        display: block;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: auto;
+    }
+  }
+
+.logo a {
+    margin: 0;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    color: white;
+    background-color: #0496c4;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between; /* Esto alinea logo a la izquierda y menú a la derecha */
+    align-items: center; /* Esto asegura que ambos elementos estén alineados verticalmente */
+    height: 100px;
+    padding: 0px 20px;
+}
+
+nav ul li h3{
+    margin-left:10px ;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    text-decoration:none;
+    background-color: white;
+    color:#0496c4;
+}
+
+.react {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 300px;
+}
+
+.download p{
+    padding: 20px;
+    font-size: 20px;
+}
+
+.download{
+    text-align: center;
+}
+
+.download a {
+    background-color: #0091cd; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 15px 30px; /* Espaciado interno del botón */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Alineación en bloque */
+    font-size: 16px; /* Tamaño del texto */
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por el botón */
+    width: auto; /* Ajusta el ancho del botón al contenido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video{
+    text-align: center;
+}
+
+.why_react{
+    text-align: left;
+    display: flex;
+}
+
+.why_react ul{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.why_react ul li{
+    padding: 10px;
+}
+
+
+.community p{
+    padding: 20px;
+    font-size: 20px;
+}
+
+.community{
+    text-align: center;
+}
+
+.community a {
+    background-color: #0091cd; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 15px 30px; /* Espaciado interno del botón */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Alineación en bloque */
+    font-size: 16px; /* Tamaño del texto */
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por el botón */
+    width: auto; /* Ajusta el ancho del botón al contenido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.community h1{
+    margin-top: 50px;
+}

@@ -1,0 +1,26 @@
+.neon-box {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.8), 0 0 60px rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .neon-box {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+body {
+    background-color: #0d243a;
+    color: white; 
+}
+
+.fonts{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}

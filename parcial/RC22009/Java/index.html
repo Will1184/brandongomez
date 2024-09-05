@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Información de Java</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f3ff;
+        }
+        header {
+            background-color: #ff6600;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background-color: #003366;
+            color: #fff;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .animated-text {
+            animation: colorChange 5s infinite;
+        }
+        @keyframes colorChange {
+            0% { color: #ff6600; }
+            50% { color: #003366; }
+            100% { color: #ff6600; }
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="animated-text">Bienvenido al Centro de Información de Java</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#resumen">Resumen</a></li>
+            <li><a href="#caracteristicas">Características Clave</a></li>
+            <li><a href="#aplicaciones">Aplicaciones</a></li>
+            <li><a href="#recursos">Recursos de Aprendizaje</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="resumen" class="fade-in">
+            <h2>¿Qué es Java?</h2>
+            <img src="img/1.png" alt="Logo de Java" />
+            <p>Java es un lenguaje de programación versátil y orientado a objetos que sigue el principio "Escribe una vez, ejecuta en cualquier lugar". Desarrollado por Sun Microsystems en 1995, se ha convertido en uno de los lenguajes de programación más populares del mundo.</p>
+        </section>
+        <section id="caracteristicas" class="fade-in">
+            <h2>Características Clave de Java</h2>
+            <img src="img/2.png" alt="Características de Java" />
+            <ul>
+                <li>Independencia de la plataforma</li>
+                <li>Orientado a objetos</li>
+                <li>Robusto y seguro</li>
+                <li>Simple y fácil de aprender</li>
+                <li>Multihilo</li>
+            </ul>
+        </section>
+        <section id="aplicaciones" class="fade-in">
+            <h2>Aplicaciones de Java</h2>
+            <img src="img/servidores-java.png" alt="Aplicaciones de Java" />
+            <ul>
+                <li>Desarrollo web</li>
+                <li>Desarrollo de aplicaciones Android</li>
+                <li>Software empresarial</li>
+                <li>Aplicaciones científicas</li>
+                <li>Tecnologías de Big Data</li>
+            </ul>
+        </section>
+        <section id="recursos" class="fade-in">
+            <h2>Recursos de Aprendizaje</h2>
+            <img src="img/4.jpg" alt="Recursos de aprendizaje de Java" />
+            <ul>
+                <li>Documentación oficial de Java</li>
+                <li>Cursos en línea (Coursera, edX, Udemy)</li>
+                <li>Libros de programación Java</li>
+                <li>Bootcamps de codificación</li>
+                <li>Plataformas de práctica (HackerRank, LeetCode)</li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const sections = document.querySelectorAll('.fade-in');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationDelay = '0.5s';
+                        entry.target.style.animationPlayState = 'running';
+                    }
+                });
+            });
+            sections.forEach(section => observer.observe(section));
+        });
+    </script>
+</body>
+</html>
